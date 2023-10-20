@@ -1,0 +1,81 @@
+.tab {
+  margin: 70px 0;
+  &__title {
+    color: var(--subTitle);
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    margin: 60px 0 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__button {
+    padding: 5px 0;
+    display: inline-block;
+    border: none;
+    background: none;
+    background: var(--bg-button);
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background: var(--bg-active);
+    transition: 0.3s;
+  }
+  &__active {
+    background: var(--bg-active);
+  }
+  &__img {
+    width: 100%;
+  }
+  &__text {
+    margin: 20px 0 15px 0;
+    color: var(--subTitle);
+    text-align: center;
+    font-size: 31px;
+  }
+  &__desc {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+@media(max-width: 550px) {
+  .tab {
+    margin: 40px 0;
+    &__title {
+      font-size: 25px;
+      letter-spacing: 4px;
+    }
+    &__wrapper {
+      margin: 30px 0 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+    &__button {
+      font-size: 15px;
+      letter-spacing: 3px;
+      text-transform: none;
+    }
+  }
+}

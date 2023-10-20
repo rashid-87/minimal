@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans&display=swap');
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul [class],
+ol [class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+ {
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans','Merriweather', serif, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+ul [class],
+ol [class] {
+  padding: 0;
+}
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+:root {
+  --white: #fff;
+  --color-title: #69B9FF;
+  --subTitle: #676770;
+  --color-text: #6A859C;
+  --color-server: #E8E8E8;
+  --bg-solid: #dcebf7;
+  --bg-services: #192024;
+  --bg-button: #92A0AD;
+  --bg-active: #2E80B6;
+}
